@@ -1,0 +1,72 @@
+/* Body*/
+body{
+    font-family: $fuente-principal;
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    color: $golden-brown;
+	background-image: url(../img/presentacion4.jpg);
+	background-attachment:fixed;
+	background-size: cover;
+	font-size: 1em;
+	line-height: 1.5em; 
+   
+}
+
+/*------------------------------------ESTILO BARRA DE NAVEGACION----------------------------------------- */
+	
+.navbar navbar-expand-lg bg-body-tertiary{ 
+	position: fixed; 
+	gap: 60px;
+	color: white;
+}
+
+.navbar-brand{
+color: white;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+	color: white!important;
+}
+.nav-link{
+	color: white!important;
+
+}
+.navbar-toggler-icon{
+	background: url('https://api.iconify.design/material-symbols/menu-rounded.svg?color=white') no-repeat center center / contain;
+}
+header {
+    background: $moonstone;
+}
+
+/* Estilo de Footer*/
+
+#main-footer {
+	text-align: center;
+	padding: 40px;
+	margin-top: 40px;
+    & p {
+		font-size: 0.9rem;
+        background: $moonstone ;
+		margin: 0;
+        width: 100%; 
+        left: 0;
+		color: $licorice;
+	}
+    & a {
+		color: white;
+		width: 100%;
+	}
+}
+
+.titulos h1{
+    width: 90%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6);
+    background-color: $licorice;
+    opacity: 80%;
+}

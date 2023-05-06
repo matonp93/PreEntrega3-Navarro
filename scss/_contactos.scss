@@ -1,0 +1,45 @@
+/*    ESTILO  CONTACTOS */
+
+#cuerpo-contacto {
+	background-image: url(../img/presentacion7.jpg);
+	background-attachment: fixed;
+	align-content: center;
+}
+.container-form { 
+	width: 90%;
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6);
+    background-color: $licorice ;opacity: 80%;	
+}
+
+.cuerpo-form{
+	width: 90%;
+    margin: 20px auto 20px auto;
+    font-size: 1.2rem;
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba( 0, 0, 0, 0.6);
+    background-color: $licorice ;opacity: 80%;	
+}
+.container-form {
+    & p{
+        display: inline-block;
+        font-size: 2rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    & a{
+        display: inline-block;
+        font-size: 1.5rem;
+        text-decoration: none;
+        width: 100%;
+        color: $golden-brown;
+        margin-bottom: 15px;
+    }
+}

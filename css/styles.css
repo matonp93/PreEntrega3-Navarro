@@ -1,0 +1,355 @@
+@charset "UTF-8";
+/*VARIABLES*/
+/*Paleta de Colores*/
+/*Tamaños de fuentes e iconos*/
+/*Resoluciones de pantallas*/
+/*Separaciones (margenes y paddings)*/
+/*Fuente*/
+/*MIXINS*/
+/*BOLSITAS DE CODIGO*/
+/* Body*/
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #a47005;
+  background-image: url(../img/presentacion4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/*------------------------------------ESTILO BARRA DE NAVEGACION----------------------------------------- */
+.navbar navbar-expand-lg bg-body-tertiary {
+  position: fixed;
+  gap: 60px;
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  background: url("https://api.iconify.design/material-symbols/menu-rounded.svg?color=white") no-repeat center center/contain;
+}
+
+header {
+  background: #7cacb6;
+}
+
+/* Estilo de Footer*/
+#main-footer {
+  text-align: center;
+  padding: 40px;
+  margin-top: 40px;
+}
+#main-footer p {
+  font-size: 0.9rem;
+  background: #7cacb6;
+  margin: 0;
+  width: 100%;
+  left: 0;
+  color: #19110e;
+}
+#main-footer a {
+  color: white;
+  width: 100%;
+}
+
+.titulos h1 {
+  width: 90%;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: #19110e;
+  opacity: 80%;
+}
+
+/* Estilos del Inicio*/
+@media (max-width: 768px) {
+  .titulos h1 {
+    font-size: 1.5rem;
+  }
+  .main-content p {
+    font-size: 0.5rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+}
+.main-content {
+  display: grid;
+  grid-template-rows: repeat(2, 0.1fr);
+  gap: 15px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: #19110e;
+  opacity: 90%;
+}
+.main-content p {
+  font-size: 0.5rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.section-galindex {
+  display: flex;
+  padding: 15px;
+  width: 90%;
+  height: 28.12rem;
+  margin: 20px auto;
+  border-radius: 12px;
+  background-color: #19110e;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+.section-galindex img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5 ease;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+.section-galindex img:hover {
+  cursor: crosshair;
+  width: 18.7rem;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/* Estilo Ebooks*/
+#cuerpo-ebooks {
+  background-image: url(../img/presentacion6.jpg);
+  background-attachment: fixed;
+  background-color: #476d70;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: repeat(2, 0.1fr);
+  gap: 15px;
+  width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: #19110e;
+}
+.main-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.conteiner-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 10px 10px 10px 10px;
+  gap: 10px;
+  margin-top: 10px;
+}
+.conteiner-items info-product {
+  color: #19110e;
+  padding: 15px 30px;
+  gap: 10px;
+}
+.conteiner-items img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: 0.5s;
+}
+.conteiner-items :hover img {
+  transform: scale(1.2);
+  border-radius: 10px 10px 10px 10px;
+}
+.conteiner-items item {
+  border-radius: 10px 10px 10px 10px;
+}
+.conteiner-items :hover {
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.2);
+}
+.conteiner-items figure {
+  overflow: hidden;
+}
+.conteiner-items price {
+  color: #a47005;
+  font-size: 25px;
+  font-weight: 400;
+}
+.conteiner-items button {
+  border: none;
+  background: none;
+  background-color: #a47005;
+  color: white;
+  padding: 15px 10px;
+  cursor: pointer;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/*    ESTILO  CONTACTOS */
+#cuerpo-contacto {
+  background-image: url(../img/presentacion7.jpg);
+  background-attachment: fixed;
+  align-content: center;
+}
+
+.container-form {
+  width: 90%;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 300;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: #19110e;
+  opacity: 80%;
+}
+
+.cuerpo-form {
+  width: 90%;
+  margin: 20px auto 20px auto;
+  font-size: 1.2rem;
+  padding: 20px;
+  font-weight: 300;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: #19110e;
+  opacity: 80%;
+}
+
+.container-form p {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  width: 100%;
+  color: #a47005;
+  margin-bottom: 15px;
+}
+
+/* ESTILO RECETAS */
+.cuerporeceta {
+  background-image: url(../img/presentacion7.jpg);
+  background-attachment: fixed;
+}
+
+.formatorecetas {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  align-self: center;
+}
+.formatorecetas h2 {
+  background-color: none;
+}
+.formatorecetas img {
+  width: 100%;
+  border-radius: 10px 10px 10px 10px;
+  height: 90%;
+  opacity: 100%;
+  align-self: center;
+}
+
+/* ESTILO GALERIA */
+.cuerpogaleria1 {
+  background-image: url(/img/presentacion2.jpg);
+  color: #a47005;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.caja_padre {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-gap: 15px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 15px;
+  border-radius: 12px;
+  background-color: #19110e;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+.imagen {
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: white;
+}
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 12px;
+}
+
+.primera {
+  grid-area: 1/1/3/2;
+}
+
+.segunda {
+  grid-area: 1/2/2/4;
+}
+
+.tercera {
+  grid-area: 1/4/2/5;
+}
+
+.cuarta {
+  grid-area: 2/2/3/3;
+}
+
+.quinta {
+  grid-area: 2/3/3/5;
+}
+
+.sexta {
+  grid-area: 3/1/4/3;
+}
+
+.septima {
+  grid-area: 3/3/4/4;
+}
+
+.ocatava {
+  grid-area: 3/4/5/5;
+}
+
+.novena {
+  grid-area: 4/1/5/2;
+}
+
+.decima {
+  grid-area: 4/2/5/4;
+}
+
+/*# sourceMappingURL=styles.css.map */

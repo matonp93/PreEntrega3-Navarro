@@ -1,0 +1,43 @@
+/*VARIABLES*/
+
+/*Paleta de Colores*/
+$moonstone: #7cacb6ff;
+$silver: #c7c9c6ff;
+$golden-brown: #a47005ff;
+$myrtle-green: #476d70ff;
+$licorice: #19110eff; 
+
+/*Tamaños de fuentes e iconos*/
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$icono-chico: 40px;
+$icono-grande: 60px;
+
+/*Resoluciones de pantallas*/
+$tablet: 768px;
+$desktop: 992px;
+$desktopXG: 1200px;
+
+/*Separaciones (margenes y paddings)*/
+$espacio-Xchico: 10px;
+$espacio-chico: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 60px;
+
+/*Fuente*/
+$fuente-principal: 'Montserrat', sans-serif;
+
+/*MIXINS*/
+/*BOLSITAS DE CODIGO*/
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-fila-centrado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,25 @@
+/* ESTILO RECETAS */
+
+.cuerporeceta{
+	background-image: url(../img/presentacion7.jpg);
+	background-attachment: fixed;
+}
+
+.formatorecetas{
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    align-self: center;
+    & h2{
+        background-color: none;
+    
+    }
+    & img{
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
+        height: 90%;
+        opacity: 100%;
+        align-self: center;
+    }
+
+}

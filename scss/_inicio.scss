@@ -1,0 +1,58 @@
+/* Estilos del Inicio*/
+
+@media (max-width: 768px) {
+    .titulos h1 {
+      font-size: 1.5rem;
+    }
+    .main-content p{
+        font-size: 0.5rem;
+        font-weight: 400;
+        text-align: justify;
+      }
+}
+.main-content{
+    display: grid;
+    grid-template-rows: repeat(2, 0.1fr);
+    gap: 15px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    background-color: $licorice;
+    opacity: 90%;
+        & p{
+            font-size: 0.5rem;
+            font-weight: 400;
+            text-align: justify;
+        }
+}
+
+.section-galindex {
+	display: flex;
+	padding: 15px;
+	width: 90%;
+	height: 28.12rem;
+	margin: 20px auto;
+	border-radius: 12px;
+	background-color: $licorice;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    & img{
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: .5 ease;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+         &:hover{
+    cursor: crosshair;
+	width: 18.7rem;
+	opacity: 1;
+	filter: contrast(120%);
+    }
+    }
+   
+}
+
+    
